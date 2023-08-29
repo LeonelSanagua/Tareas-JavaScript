@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicios DOOM</title>
+</head>
+
+<body>
+  <div class="d-flex gap-3 mb-3">
+    <button class="btn btn-primary" onclick="changecolor()">
+      Cambiar Color de Fondo
+    </button>
+  </div>
+  <p id="parr1" ">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+      blanditiis laboriosam maiores, omnis ipsam architecto excepturi nam
+      beatae, ullam animi accusantium voluptate. Dolor doloremque eum delectus
+      placeat id, repellat animi.
+    </p>
+    <p id=" parr2" onclick="countClics()">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+    blanditiis laboriosam maiores, omnis ipsam architecto excepturi nam
+    beatae, ullam animi accusantium voluptate. Dolor doloremque eum delectus
+    placeat id, repellat animi.
+  </p>
+
+  <div>
+    <p id="parr3" onmouseover="cambiarColorDeFondo(true)" onmouseout="cambiarColorDeFondo(false)">Cuando
+      Deslizar y cambia estilos.</p>
+    <p id="parr4">Reloj </p>
+    <button id="boton2" onclick="fechaActual()" class="btn btn-primary">
+      Actualizar horario
+  </div>
+
+
+
+  <h4>Formularios</h4>
+  <div class="col-6">
+    <form>
+      <div class="mb-3">
+        <label for="input1" class="form-label">Tarea</label>
+        <input type="text" class="form-control" id="input1" />
+      </div>
+      <div class="mb-3 d-flex justify-content-end">
+        <button class="btn btn-success" onclick="agregarTarea(event)">
+          Agregar
+        </button>
+      </div>
+      <ul id="listaDeTareas">
+        <li>Tareas Agregadas</li>
+      </ul>
+    </form>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
